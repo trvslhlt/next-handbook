@@ -1,0 +1,10 @@
+version: "3"
+services:
+  next-handbook:
+    build: .
+    container_name: next-handbook
+    ports:
+      - 8080:3000
+    volumes:
+      - ./:/home/app
+
